@@ -1,5 +1,7 @@
 <h1>Quests</h1>
 
 <% @quests.each do |q| %>
-  <p><%= q.name %></p>
+  <p><%= Warrior.find_by(id: q.warrior_id).name %></p>
+  <p><%= Dragon.find_by(id: q.dragon_id).name %></p>
+  <p><%= Dungeonmaster.find_by(id: q.dungeonmaster_id).name %></p>
 <% end %>
