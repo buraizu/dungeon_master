@@ -1,6 +1,7 @@
 class CreateQuests < ActiveRecord::Migration[5.0]
   def change
-    create_table :dungeon_masters do |t|
+
+    create_table :dungeonmasters do |t|
       t.string :name
     end
 
@@ -8,19 +9,20 @@ class CreateQuests < ActiveRecord::Migration[5.0]
       t.string :name
       t.integer :health
       t.integer :gold
+      t.integer :experience
     end
 
-    create_table :mages do |t|
+    create_table :dragons do |t|
       t.string :name
       t.integer :health
-      t.integer :mana
       t.integer :gold
+      t.integer :experience
     end
 
     create_table :quests do |t|
-      t.belongs_to :dungeon_master, index: true
+      t.belongs_to :dungeonmaster, index: true
       t.belongs_to :warrior, index: true
-      t.belongs_to :mage, index: true
+      t.belongs_to :dragon, index: true
       t.string :treasure
     end
 

@@ -1,5 +1,5 @@
 class Quest < ActiveRecord::Base
-  belongs_to :dungeon_master
+  belongs_to :dungeonmaster
   belongs_to :warrior
-  belongs_to :mage
+  belongs_to :dragon
 end
