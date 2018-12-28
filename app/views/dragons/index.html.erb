@@ -1,5 +1,7 @@
 <h1>Dragons</h1>
 
 <% @dragons.each do |d| %>
-  <p><%= d.name %></p>
+  <%= link_to(d) do %>
+    <strong><%= d.name %></strong> -- Check out this Dragon!
+  <% end %>
 <% end %>

@@ -1,3 +1,14 @@
+<%= link_to(@profile) do %>
+  <strong><%= @profile.name %></strong> -- <span>Check it out!</span>
+<% end %>
+# => <a href="/profiles/1">
+       <strong>David</strong> -- <span>Check it out!</span>
+     </a>
+
+
+
+
+
 Requirements
 Use the Ruby on Rails framework.
 

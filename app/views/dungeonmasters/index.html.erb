@@ -1,5 +1,7 @@
 <h1>Dungeonmasters</h1>
 
 <% @dungeonmasters.each do |dm| %>
-  <p><%= dm.name %></p>
+  <%= link_to(dm) do %>
+    <strong><%= dm.name %></strong> -- Check out this Dungeonmaster!
+  <% end %>
 <% end %>
