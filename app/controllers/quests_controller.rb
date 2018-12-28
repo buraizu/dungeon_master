@@ -5,7 +5,7 @@ class QuestsController < ApplicationController
   end
 
   def show
-
+    @quest = Quest.find_by(id: params[:id])
   end
 
 end

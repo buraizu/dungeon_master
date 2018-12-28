@@ -5,7 +5,7 @@ class WarriorsController < ApplicationController
   end
 
   def show
-
+    @warrior = Warrior.find_by(id: params[:id])
   end
 
 end

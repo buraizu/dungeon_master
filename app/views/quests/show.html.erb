@@ -1,0 +1,3 @@
+<h2><%= Dungeonmaster.find_by(id: @quest.dungeonmaster_id).name %></h2>
+<h3><%= Dragon.find_by(id: @quest.dragon_id).name %></h3>
+<h3><%= Warrior.find_by(id: @quest.warrior_id).name %></h3>

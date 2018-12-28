@@ -5,7 +5,7 @@ class DungeonmastersController < ApplicationController
   end
 
   def show
-
+    @dungeonmaster = Dungeonmaster.find_by(id: params[:id])
   end
 
 end
